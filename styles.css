@@ -1,0 +1,161 @@
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5e7d0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #6b8e23;
+}
+
+img {
+  max-height: 3in;
+  width: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+header {
+  background-color: #f5e7d0;
+  color: #333;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f5e7d0;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #6b8e23;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #4b6b29;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  text-align: left;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 95%;
+}
+
+table thead {
+  background-color: #6b8e23;
+  color: #ffffff;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border: none;
+}
+
+table th {
+  font-weight: bold;
+  text-align: center;
+}
+
+table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #e0dbc8;
+}
+
+button {
+  background-color: #6b8e23;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b6b29;
+}
+
+footer {
+  background-color: #f5e7d0;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, p {
+  color: #333;
+}
+
+a {
+  color: #6b8e23;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4b6b29;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  main {
+    width: 95%;
+    margin: 1rem auto;
+  }
+}
